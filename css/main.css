@@ -18,14 +18,14 @@ html {
 }
 
 body {
-    font-family: 'Encode Sans', serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
 a {
   background-color: transparent;
-  color: green;
-  text-decoration: none;
+  color: #333;
+  text-decoration: underline;
 }
 
 a:active,
@@ -47,7 +47,7 @@ a:hover {
 
 .flex-inner {
     text-align: center;
-    max-width: 80%;
+    max-width: 65%;
 }
 
 h1 {
@@ -97,14 +97,14 @@ li a .fa-envelope-square:hover {
     }
     .flex {
         align-items: center;
-        height: 40rem;
+        height: 50rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     li {
