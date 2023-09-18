@@ -1,3 +1,26 @@
+/* charis-sil-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Charis SIL';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/charis-sil-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* charis-sil-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Charis SIL';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/charis-sil-v2-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --color-gradient-start: #dc5364;
+    --color-gradient-end: #36368B;
+}
+
 html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
@@ -18,7 +41,7 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Charis SIL', serif;
     margin: 0;
 }
 
@@ -35,19 +58,25 @@ a:hover {
 
 
 .wrap {
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
     max-width: 960px;
 }
 
 .flex {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .flex-inner {
     text-align: center;
     max-width: 65%;
+}
+
+.logo {
+    width: 3rem;
+    display: inline-block;
 }
 
 h1 {
@@ -59,46 +88,52 @@ p {
 }
 
 ul {
+    display: flex;
     padding: 0;
-    text-align: center;
+    justify-content: center;
+    gap: .25rem;
 }
 
 li {
     list-style: none;
     padding-right: .3125rem;
     text-align: center;
-    display: inline;
     font-size: 1.6rem;
 }
 
-li a .fa {
+li a .fa-brands {
     color: black;
 }
 
-li a .fa-xing-square:hover {
+li a .fa-square-xing:hover {
     color: #005a5c;
 }
 
-li a .fa-linkedin-square:hover {
+li a .fa-linkedin:hover {
     color: #006cac;
 }
 
-li a .fa-twitter-square:hover {
-    color: #1a97f0;
+li a .fa-square-x-twitter:hover {
+    color: #0f1419;
 }
 
-li a .fa-envelope-square:hover {
-    color: #666;
+li a .fa-square-envelope:hover {
+    color: #d31f1f;
+}
+
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
 }
 
 @media (min-width: 700px) {
-    .wrap {
-        margin-top: 0;
-    }
-    .flex {
-        align-items: center;
-        height: 50rem;
-    }
     h1 {
         font-size: 1.6rem;
     }
