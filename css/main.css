@@ -17,8 +17,9 @@
 }
 
 :root {
-    --color-gradient-start: #dc5364;
-    --color-gradient-end: #36368B;
+    --color-logo-background: #efefef;
+    --color-logo-gradient-start: #dc5364;
+    --color-logo-gradient-end: #36368B;
 }
 
 html {
@@ -75,7 +76,7 @@ a:hover {
 }
 
 .logo {
-    width: 3rem;
+    width: 4rem;
     display: inline-block;
 }
 
