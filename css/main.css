@@ -88,38 +88,42 @@ p {
     font-size: 1rem;
 }
 
+sup,
+.fn {
+    font-size: .75rem;
+}
+
 ul {
     display: flex;
-    padding: 0;
+    padding: .5rem;
     justify-content: center;
-    gap: .25rem;
+    flex-direction: row;
+    gap: .5rem;
 }
 
 li {
     list-style: none;
     padding-right: .3125rem;
     text-align: center;
-    font-size: 1.6rem;
+    line-height: 1;
 }
 
-li a .fa-brands {
-    color: black;
+li a {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-li a .fa-square-xing:hover {
-    color: #005a5c;
+li a .fa-xing:hover {
+    fill: #005a5c;
 }
 
-li a .fa-linkedin:hover {
-    color: #006cac;
+li a .fa-mastodon:hover {
+    fill: #615df7;
 }
 
-li a .fa-square-x-twitter:hover {
-    color: #0f1419;
-}
-
-li a .fa-square-envelope:hover {
-    color: #d31f1f;
+li a .fa-envelope:hover {
+    fill: #d31f1f;
 }
 
 svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
@@ -128,8 +132,8 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 .svg-inline--fa {
-    display: var(--fa-display,inline-block);
-    height: 1em;
+    display: inline-block;
+    height: 1.5rem;
     overflow: visible;
     vertical-align: -.125em;
 }
@@ -142,9 +146,4 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     p {
         font-size: 1.1rem;
     }
-
-    li {
-        font-size: 2rem;
-    }
-
 }
