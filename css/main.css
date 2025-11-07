@@ -32,6 +32,8 @@ html {
     color: rgb(34, 34, 34);
     font-size: 1rem;
     line-height: 1.4;
+    background: linear-gradient(180deg, #f4f1ea 60%, #dcd5cc 100%);
+    background-attachment: fixed;
 }
 
 body {
@@ -67,8 +69,14 @@ a:hover {
 }
 
 .logo {
-    width: 4rem;
+    width: 10rem;
     margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1 {
@@ -101,18 +109,6 @@ li a {
     padding: 0;
 }
 
-li a .fa-xing:hover {
-    fill: rgb(0, 90, 92);
-}
-
-li a .fa-bluesky:hover {
-    fill: rgb(3, 133, 255);
-}
-
-li a .fa-envelope:hover {
-    fill: rgb(211, 31, 31);
-}
-
 svg:not(:host).svg-inline--fa,
 svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -124,6 +120,7 @@ svg:not(:root).svg-inline--fa {
     height: 1.5rem;
     overflow: visible;
     vertical-align: -0.125em;
+    fill: rgb(70, 70, 70);
 }
 
 @media screen and (min-width: 1000px) {
@@ -138,15 +135,31 @@ svg:not(:root).svg-inline--fa {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        background-color: rgb(33, 33, 33);
-        color: rgb(223, 223, 223);
-    }
-    a {
-        color: rgb(223, 223, 223);
-    }
-    a svg {
-        fill: rgb(223, 223, 223);
-    }
+.ornament {
+    font-size: 1rem;
+    color: rgba(
+        70,
+        70,
+        70,
+        0.75
+    ); /* Aligned with your icons' slate-ink gray base */
+    margin: 1.5rem 0;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ornament::before,
+.ornament::after {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background-color: rgba(
+        70,
+        70,
+        70,
+        0.5
+    ); /* Delicate horizontal lines framing the star */
 }
