@@ -93,20 +93,33 @@ ul {
     padding: 0.5rem;
     justify-content: center;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 li {
     list-style: none;
-    padding-right: 0.3125rem;
     text-align: center;
     line-height: 1;
 }
 
 li a {
-    display: block;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(
+        70,
+        70,
+        70,
+        0.05
+    ); /* Soft, cozy ink-gray background */
+    transition: background-color 0.2s ease;
+}
+
+li a:hover {
+    background-color: rgba(70, 70, 70, 0.1); /* Subtle hover darken feedback */
 }
 
 svg:not(:host).svg-inline--fa,
@@ -116,8 +129,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 .svg-inline--fa {
-    display: inline-block;
-    height: 1.5rem;
+    height: 1.75rem;
     overflow: visible;
     vertical-align: -0.125em;
     fill: rgb(70, 70, 70);
