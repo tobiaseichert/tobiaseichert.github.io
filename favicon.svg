@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1108 929" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <style>
+        .logo-path {
+            fill: rgb(70, 70, 70);
+            transition: fill 0.3s ease;
+        }
+        @media (prefers-color-scheme: dark) {
+            .logo-path {
+                fill: rgb(244, 241, 234); /* Soft warm alabaster for dark browser tabs */
+            }
+        }
+    </style>
     <g transform="matrix(4.40843,0,0,4.40843,-2786.54,-4160.7)">
         <g transform="matrix(393.055,0,0,393.055,651.747,1152.91)">
-            <path d="M0.192,-0.532L0.311,-0.532L0.067,0.004L-0.05,0.004L0.192,-0.532Z" style="fill:rgb(70,70,70);fill-rule:nonzero;"/>
+            <path class="logo-path" d="M0.192,-0.532L0.311,-0.532L0.067,0.004L-0.05,0.004L0.192,-0.532Z" style="fill-rule:nonzero;"/>
         </g>
         <g transform="matrix(393.055,0,0,393.055,761.016,1152.91)">
-            <path d="M0.192,-0.532L0.311,-0.532L0.067,0.004L-0.05,0.004L0.192,-0.532Z" style="fill:rgb(70,70,70);fill-rule:nonzero;"/>
+            <path class="logo-path" d="M0.192,-0.532L0.311,-0.532L0.067,0.004L-0.05,0.004L0.192,-0.532Z" style="fill-rule:nonzero;"/>
         </g>
     </g>
 </svg>
