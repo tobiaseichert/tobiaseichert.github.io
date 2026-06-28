@@ -175,3 +175,28 @@ svg:not(:root).svg-inline--fa {
         0.5
     ); /* Delicate horizontal lines framing the star */
 }
+
+/* Skip link for keyboard accessibility */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #f4f1ea;
+    color: rgb(34, 34, 34);
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(70, 70, 70, 0.25);
+    border-radius: 4px;
+    z-index: 100;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+/* Hide email icon if JavaScript is disabled */
+.no-js .email-item {
+    display: none;
+}
